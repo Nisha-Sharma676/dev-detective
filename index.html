@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search GitHub users and explore their profiles and repositories.">
+  <title>Dev-Detective | GitHub Search</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Dev-Detective</h1>
+    <p>Discover developers on GitHub</p>
+  </header>
+
+  <main class="container">
+    <form id="search-form">
+      <label for="username">GitHub Username</label>
+      <div class="search-box">
+        <input
+          type="text"
+          id="username"
+          placeholder="Try octocat"
+          autocomplete="off"
+          required
+        >
+        <button type="submit">Search</button>
+      </div>
+    </form>
+
+    <p id="status" role="status" aria-live="polite"></p>
+    <section id="profile" aria-label="GitHub user profile"></section>
+    <section id="repositories" aria-label="Latest repositories"></section>
+  </main>
+
+  <footer>
+    <p>Built with JavaScript and the GitHub REST API</p>
+  </footer>
+</body>
+</html>

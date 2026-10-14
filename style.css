@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #20252b;
+  line-height: 1.6;
+}
+
+.header {
+  padding: 32px 16px;
+  text-align: center;
+  background: #24292f;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header p {
+  margin-bottom: 0;
+  color: #d1d5db;
+}
+
+.container {
+  width: min(900px, 92%);
+  margin: 32px auto;
+}
+
+#search-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.search-box {
+  display: flex;
+  gap: 12px;
+}
+
+.search-box input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #c9ced6;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #0969da;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0757b5;
+}
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 3px solid #0969da;
+  outline-offset: 3px;
+}
+
+#status {
+  min-height: 28px;
+  margin: 20px 0;
+}
+
+.profile-card,
+.repo-card {
+  padding: 24px;
+  margin-bottom: 20px;
+  background: white;
+  border: 1px solid #d8dee4;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.repo-card a {
+  color: #0969da;
+  font-weight: bold;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #57606a;
+}
+
+@media (max-width: 480px) {
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+
+  .profile-card,
+  .repo-card {
+    padding: 16px;
+  }
+}
